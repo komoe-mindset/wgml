@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="description" content="Wisdom-Guided Mindful Living: An interactive educational platform for international students to learn Dhamma, Mindfulness, and Wisdom." />
+    <title>Wisdom-Guided Mindful Living</title>
+    
+    <!-- Performance Hints -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://esm.sh" />
+    <link rel="preconnect" href="https://aistudiocdn.com" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@400;500;700&family=Inter:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="mask-icon" href="/mask-icon.svg" color="#4f46e5" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Enhanced Burmese Typography for Production */
+      .font-burmese {
+        font-family: 'Padauk', sans-serif;
+        line-height: 2.2 !important; /* Optimized from 2.6 to 2.2 */
+        padding-top: 0.15em;
+        padding-bottom: 0.15em;
+        text-rendering: optimizeLegibility;
+        word-spacing: -0.05em; /* Tightens the space between words for cohesive phrases */
+        text-align: left; /* Prevents justification from creating ugly gaps */
+        font-weight: 500;
+      }
+      .serif-title {
+        font-family: 'Merriweather', serif;
+      }
+      /* Custom Scrollbar */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1;
+        border-radius: 20px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8;
+      }
+      /* Prose Overrides for HTML Content */
+      .prose p, .html-content-container p {
+        margin-bottom: 1.25em; /* Optimized from 1.5em */
+        line-height: 2.2 !important;
+        word-spacing: -0.05em;
+      }
+      .html-content-container {
+        font-family: 'Padauk', sans-serif;
+        text-align: left;
+      }
+      
+      /* Mobile Optimization for Burmese */
+      @media (max-width: 640px) {
+        .font-burmese {
+           line-height: 2.4 !important; /* Slightly taller on mobile for touch readability */
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "papaparse": "https://aistudiocdn.com/papaparse@^5.5.3",
+    "pdfjs-dist": "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/+esm",
+    "pdfjs-dist/build/pdf.worker.min.mjs": "https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.mjs",
+    "vite-plugin-pwa": "https://aistudiocdn.com/vite-plugin-pwa@^1.2.0",
+    "virtual:pwa-register": "https://esm.sh/vite-plugin-pwa@0.17.4/register"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
